@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTP Forwarding Service</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>OTP Forwarding Service</h1>
+  
+  <form id="otpForm">
+    <label for="sender">Sender Phone Number:</label>
+    <input type="text" id="sender" name="sender" required>
+    
+    <label for="receiver">Receiver Phone Number:</label>
+    <input type="text" id="receiver" name="receiver" required>
+
+    <label for="startTime">Start Time:</label>
+    <input type="datetime-local" id="startTime" name="startTime" required>
+    
+    <label for="endTime">End Time:</label>
+    <input type="datetime-local" id="endTime" name="endTime" required>
+    
+    <button type="submit">Fetch and Forward OTPs</button>
+  </form>
+  
+  <div id="otpDisplay">
+    <!-- OTPs will be displayed here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
